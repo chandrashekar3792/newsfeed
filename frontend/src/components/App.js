@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route,Redirect } from "react-router-dom";
-import {Header} from "./header/Header";
 import Footer from "./footer/Footer"
 import Main from "./main/Main";
 import Login from "./login/login"

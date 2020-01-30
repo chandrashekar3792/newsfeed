@@ -16,15 +16,18 @@ const registerUser=(request)=>new Promise((resolve,reject)=>{
         attributeList.push(new AmazonCognitoIdentity.CognitoUserAttribute({Name:"email",Value:request.email}));
         attributeList.push(new AmazonCognitoIdentity.CognitoUserAttribute({Name:"phone_number",Value:"+91"+request.mobile}));
 
-        userPool.signUp(request.email, request.password, attributeList, null, function(err, result){
+        return userPool.signUp(request.email, request.password, attributeList, null, function(err, result){
             if (err) {
-                console.log(err);
+                console.log("err1",err);
                 reject(err);
             }
-            cognitoUser = result.user;
-            resolve(cognitoUser.getUsername());
+            let cognitoUser = result.user;
+            let username=cognitoUser.getUsername()
+            console.log("username",username);
+            resolve({username:username});
         });
     }catch(err){
+        console.log("err",err);
         throw err;
     }
 });

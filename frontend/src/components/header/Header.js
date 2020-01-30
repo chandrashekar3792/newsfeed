@@ -25,7 +25,7 @@ export class Header extends Component {
 
 	logout(){
 		localStorage.removeItem("Authorization");
-		window.location.reload();
+		// window.location.reload();
 	}
 	toggle() {
 		this.setState({
