@@ -1,0 +1,24 @@
+{
+  "name": "newsfeed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chandrashekar S",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-cognito-identity-js": "^3.2.2",
+    "async-request": "^1.2.0",
+    "aws-sdk": "^2.610.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwk-to-pem": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "serverless-dotenv-plugin": "^2.1.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^4.10.6",
+    "serverless-plugin-include-dependencies": "^3.2.1"
+  }
+}
