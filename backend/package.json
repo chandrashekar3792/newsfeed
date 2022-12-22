@@ -12,7 +12,7 @@
     "amazon-cognito-identity-js": "^3.2.2",
     "async-request": "^1.2.0",
     "aws-sdk": "^2.610.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwk-to-pem": "^2.0.3",
     "node-fetch": "^2.6.0",
     "serverless-dotenv-plugin": "^2.1.1"
